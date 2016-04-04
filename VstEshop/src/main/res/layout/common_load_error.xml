@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_common_bg"
+    android:id="@+id/load_error_parent"
+    >
+    <ImageView 
+        android:id="@+id/load_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@mipmap/load_error_icon"
+        />
+    
+    <TextView 
+        android:id="@+id/load_error_tip"
+        android:layout_below="@+id/load_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/common_loading_net_error"
+        />
+    
+    <TextView 
+        android:layout_below="@+id/load_error_tip"
+        android:id="@+id/click_reload"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="@string/common_reload"
+        android:background="@drawable/reload_corner_gray_selector"
+        />
+    <TextView 
+        android:layout_below="@id/click_reload"
+        android:id="@+id/click_checknetwork"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#969696"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:text="@string/common_checknetwork"
+        android:background="@drawable/reload_corner_gray_selector"
+        />
+</RelativeLayout>
